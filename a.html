@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EAV Kivumu TSS Notice Board</title>
+</head>
+<body>
+
+<h2>EAV Kivumu TSS Notice Board</h2>
+
+<p id="notice">No announcement yet.</p>
+
+<button onclick="updateNotice()">Post Announcement</button>
+
+<script>
+function updateNotice() {
+    // Select the notice element
+    var notice = document.getElementById("notice");
+    
+    // Update the message
+    notice.innerHTML = "Tomorrow all students must report at 7:00 AM for General Cleaning.";
+    
+    // Change text color to blue
+    notice.style.color = "blue";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kigali Supermarket Stock</title>
+</head>
+<body>
+
+<h2>Kigali Supermarket Stock</h2>
+
+<ul>
+    <li class="product">Rice - Available</li>
+    <li class="product">Sugar - Available</li>
+    <li class="product">Cooking Oil - Available</li>
+</ul>
+<button onclick="checkStock()">Check Stock</button>
+<script>
+function checkStock() {
+    var items = document.getElementsByClassName("product");   
+    // Change the second item (Sugar)
+    items[1].innerHTML = "Sugar - Low Stock";
+    
+    // Highlight with red background
+    items[1].style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>
